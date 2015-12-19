@@ -3,10 +3,9 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Charts</title>
+    <title>Admin Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
-
 
     <!-- The styles -->
     <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
@@ -39,7 +38,7 @@
 
 </head>
 
-<body>
+<body >
     <!-- topbar starts -->
     <div class="navbar navbar-default" role="navigation">
 
@@ -50,10 +49,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a  href="index.html">
-              <img alt="Charisma Logo" src="img/logo.png" class="hidden-xs"/>
-                <</a>
-
+          <img src="img/logo.png"/>
             <!-- user dropdown starts -->
             <div class="btn-group pull-right">
                 <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -67,7 +63,6 @@
                 </ul>
             </div>
             <!-- user dropdown ends -->
-            <!-- theme selector ends -->
 
 
         </div>
@@ -90,21 +85,22 @@
 
                         <li><a class="ajax-link" href="sendmail.html"><i
                                     class="glyphicon glyphicon-edit"></i><span> SendMail</span></a></li>
-                        <li><a class="ajax-link" href="chart.html"><i class="glyphicon glyphicon-list-alt"></i><span> Charts</span></a>
+                        <li><a class="ajax-link" href="chart.html"><i class="glyphicon glyphicon-list-alt"></i><span>Usage Charts</span></a>
                         </li>
                         <li><a class="ajax-link" href="typography.html"><i class="glyphicon glyphicon-font"></i><span> Typography</span></a>
                         </li>
 						<li><a class="ajax-link" href="billing.html"><i class="glyphicon glyphicon-shopping-cart"></i><span> Billing</span></a>
                         </li>
+
+
                         <li><a class="ajax-link" href="records.html"><i
                                     class="glyphicon glyphicon-align-justify"></i><span> Records</span></a></li>
-                        <li><a class="ajax-link" href="calendar.html"><i class="glyphicon glyphicon-calendar"></i><span> Calendar</span></a>
+                                              <li><a class="ajax-link" href="calendar.html"><i class="glyphicon glyphicon-calendar"></i><span> Calendar</span></a>
                         </li>
                         <li><a href="../login.html"><i class="glyphicon glyphicon-lock"></i><span> Logout</span></a>
                         </li>
                     </ul>
-
-                </div>
+                        </div>
             </div>
         </div>
         <!--/span-->
@@ -127,94 +123,17 @@
             <a href="#">Home</a>
         </li>
         <li>
-            <a href="#">Charts</a>
+            <a href="#">Billing</a>
         </li>
     </ul>
 </div>
-
 <div class="row">
-
-    <div class="box col-md-12">
-        <div class="box-inner">
-            <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-list-alt"></i> Sale points</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-                <div id="sincos" class="center" style="height:300px"></div>
-                <p id="hoverdata">Mouse position at (<span id="x">0</span>, <span id="y">0</span>). <span
-                        id="clickdata"></span></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="box col-md-12">
-        <div class="box-inner">
-            <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-list-alt"></i> Flot</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-                <div id="flotchart" class="center" style="height:300px"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="box col-md-12">
-        <div class="box-inner">
-            <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-list-alt"></i> Loan Approvals</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-                <div id="stackchart" class="center" style="height:300px;"></div>
-
-                <p class="stackControls center">
-                    <input class="btn btn-default" type="button" value="With stacking">
-                    <input class="btn btn-default" type="button" value="Without stacking">
-                </p>
-
-
-            </div>
-        </div>
-    </div>
-
-</div><!--/row-->
-
-<div class="row">
-
-    <div class="box col-md-6">
-        <div class="box-inner">
+	 <div class="box col-md-6">
+        <div class="box-inner homepage-box">
             <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-list-alt"></i> Realtime</h2>
+                <h2><i class="glyphicon glyphicon-list-alt"></i>Customer Token</h2>
 
                 <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
                     <a href="#" class="btn btn-minimize btn-round btn-default"><i
                             class="glyphicon glyphicon-chevron-up"></i></a>
                     <a href="#" class="btn btn-close btn-round btn-default"><i
@@ -222,20 +141,88 @@
                 </div>
             </div>
             <div class="box-content">
-                <div id="realtimechart" style="height:190px;"></div>
-                <p>You can update a chart periodically to get a real-time effect by using a timer to insert the new data
-                    in the plot and redraw it.</p>
+                
+                <!-- Begin MailChimp Signup Form -->
+				 <h3>Enter customer Token</h3>
+                <div class="mc_embed_signup">
+				
+                    <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div>
+                            <label>Enter Token</label>
+                            <input type="text" value="" name="token" class="email" placeholder="Token Please" required>
 
-                <p>Time between updates: <input id="updateInterval" type="text" value=""
-                                                style="text-align: right; width:5em"> milliseconds</p>
+                            <div class="power_field"><input type="text" name="b_444b176aa3c39f656c66381f6_eeb0c04e84" tabindex="-1" value=""></div>
+                            <div class="active"><input type="submit" value="Apply Token" name="subscribe" class="btn btn-primary"></div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--End mc_embed_signup-->
+                <br/>
+
+               
             </div>
         </div>
     </div>
-
-    <div class="box col-md-6">
-        <div class="box-inner">
+	 <div class="box col-md-6">
+        <div class="box-inner homepage-box">
             <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-list-alt"></i> Browsers Usage</h2>
+                <h2><i class="glyphicon glyphicon-list-alt"></i>Add product</h2>
+
+                <div class="box-icon">
+                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                            class="glyphicon glyphicon-chevron-up"></i></a>
+                    <a href="#" class="btn btn-close btn-round btn-default"><i
+                            class="glyphicon glyphicon-remove"></i></a>
+                </div>
+            </div>
+            <div class="box-content">
+                
+                <!-- Begin MailChimp Signup Form -->
+                <div class="mc_embed_signup">
+                    <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div class="input-group">
+							<span class="input-group-addon">Procuct Code</span>
+							<input type="text" class="form-control" placeholder="Enter product code">
+						  </div>
+							
+						
+						   <br/>
+						   <div class="active input-group" >
+							<span class="input-group-addon">Type</span>
+							<input type="text" class="form-control" placeholder="Categort">
+						  </div>
+						   <br/>
+						  <div class="input-group">
+							<span class="input-group-addon">Quantity</span>
+							<input type="text" class="form-control" placeholder="Quantity">
+						  </div>
+						  <br/>
+						   <div class="input-group">
+							<span class="input-group-addon">Price</span>
+							<input type="text" class="form-control" placeholder="Price">
+						  </div>
+						   
+						   <br/>
+                            
+                            
+                            <div class="success"><input type="submit" value="Add to cart" name="subscribe" class="button success"></div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--End mc_embed_signup-->
+                <br/>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-header well">
+                <h2><i class="glyphicon glyphicon-shopping-cart"></i>Shopping Cart</h2>
 
                 <div class="box-icon">
                     <a href="#" class="btn btn-setting btn-round btn-default"><i
@@ -246,26 +233,144 @@
                             class="glyphicon glyphicon-remove"></i></a>
                 </div>
             </div>
-            <div class="box-content">
-                <div id="donutchart" style="height: 300px;">
+            <div class="box-content row">
+                <div class="col-lg-7 col-md-12">
+                   
+                    <div class="container">
+						<div class="row">
+							<div class="col-sm-12 col-md-10 col-md-offset-1">
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th>Product</th>
+											<th>Quantity</th>
+											<th class="text-center">Price</th>
+											<th class="text-center">Total</th>
+											<th> </th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-sm-8 col-md-6">
+											<div class="media">
+												<a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+												<div class="media-body">
+													<h4 class="media-heading"><a href="#">Product name</a></h4>
+													<h5 class="media-heading"> by <a href="#">Brand name</a></h5>
+													<span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+												</div>
+											</div></td>
+											<td class="col-sm-1 col-md-1" style="text-align: center">
+											<input type="email" class="form-control" id="exampleInputEmail1" value="3">
+											</td>
+											<td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
+											<td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
+											<td class="col-sm-1 col-md-1">
+											<button type="button" class="btn btn-danger">
+												<span class="glyphicon glyphicon-remove"></span> Remove
+											</button></td>
+										</tr>
+										<tr>
+											<td class="col-md-6">
+											<div class="media">
+												<a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+												<div class="media-body">
+													<h4 class="media-heading"><a href="#">Product name</a></h4>
+													<h5 class="media-heading"> by <a href="#">Brand name</a></h5>
+													<span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
+												</div>
+											</div></td>
+											<td class="col-md-1" style="text-align: center">
+											<input type="email" class="form-control" id="exampleInputEmail1" value="2">
+											</td>
+											<td class="col-md-1 text-center"><strong>$4.99</strong></td>
+											<td class="col-md-1 text-center"><strong>$9.98</strong></td>
+											<td class="col-md-1">
+											<button type="button" class="btn btn-danger">
+												<span class="glyphicon glyphicon-remove"></span> Remove
+											</button></td>
+										</tr>
+										<tr>
+											<td>   </td>
+											<td>   </td>
+											<td>   </td>
+											<td><h5>Subtotal</h5></td>
+											<td class="text-right"><h5><strong>$24.59</strong></h5></td>
+										</tr>
+										<tr>
+											<td>   </td>
+											<td>   </td>
+											<td>   </td>
+											<td><h5>Estimated shipping</h5></td>
+											<td class="text-right"><h5><strong>$6.94</strong></h5></td>
+										</tr>
+										<tr>
+											<td>   </td>
+											<td>   </td>
+											<td>   </td>
+											<td><h3>Total</h3></td>
+											<td class="text-right"><h3><strong>$31.53</strong></h3></td>
+										</tr>
+										<tr>
+											<td>   </td>
+											<td>   </td>
+											<td>   </td>
+											<td>
+											
+											<td>
+											<button type="button" class="btn btn-success">
+												Send Bill <span class="glyphicon glyphicon-play"></span>
+											</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+
                 </div>
+
+
             </div>
         </div>
     </div>
-</div><!--/row-->
+</div>
+    
+</div>
 
-<!-- chart libraries start -->
-<script src="bower_components/flot/excanvas.min.js"></script>
-<script src="bower_components/flot/jquery.flot.js"></script>
-<script src="bower_components/flot/jquery.flot.pie.js"></script>
-<script src="bower_components/flot/jquery.flot.stack.js"></script>
-<script src="bower_components/flot/jquery.flot.resize.js"></script>
-<!-- chart libraries end -->
-<script src="js/init-chart.js"></script>
 
     <!-- content ends -->
     </div><!--/#content.col-md-0-->
 </div><!--/fluid-row-->
+
+    <!-- Ad, you can remove it -->
+
+    <!-- Ad ends -->
+
+    <hr>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h3>Settings</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Here settings can be configured...</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 </div><!--/.fluid-container-->
